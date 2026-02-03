@@ -194,6 +194,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/5">
       <Navbar />
       <main>
+        {/* <p>hello</p> */}
         <HeroSection />
         <AboutSection />
         <ResearchAreasSection />
