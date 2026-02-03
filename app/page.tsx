@@ -202,7 +202,7 @@ export default function Home() {
         <TeachingSection />
         <ProjectsSection />
         <StudentsSection />
-        <AchievementsSection />
+        {/* <AchievementsSection /> */}
         <ContactSection />
       </main>
       <Footer />

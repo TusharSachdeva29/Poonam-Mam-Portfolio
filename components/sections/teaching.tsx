@@ -16,36 +16,36 @@ export default function TeachingSection() {
     { name: 'Distributed Systems', level: 'Graduate', icon: Target },
   ]
 
-  const teachingInfo = [
-    {
-      icon: BookOpen,
-      title: 'Academic Courses',
-      description: 'Teaching core computer science subjects with emphasis on practical applications and industry relevance',
-      gradient: 'from-blue-500 to-cyan-500',
-      stats: { value: '6+', label: 'Courses' }
-    },
-    {
-      icon: Users,
-      title: 'Teaching Philosophy',
-      description: 'Interactive learning environment combining theoretical foundations with hands-on projects and real-world case studies',
-      gradient: 'from-purple-500 to-pink-500',
-      stats: { value: '100+', label: 'Students/Year' }
-    },
-    {
-      icon: Award,
-      title: 'Mentorship Excellence',
-      description: 'Dedicated guidance for student research, career development, and academic growth through personalized attention',
-      gradient: 'from-amber-500 to-orange-500',
-      stats: { value: '10+', label: 'Years' }
-    }
-  ]
+  // const teachingInfo = [
+  //   // {
+  //   //   icon: BookOpen,
+  //   //   title: 'Academic Courses',
+  //   //   description: 'Teaching core computer science subjects with emphasis on practical applications and industry relevance',
+  //   //   gradient: 'from-blue-500 to-cyan-500',
+  //   //   stats: { value: '6+', label: 'Courses' }
+  //   // },
+  //   // {
+  //   //   icon: Users,
+  //   //   title: 'Teaching Philosophy',
+  //   //   description: 'Interactive learning environment combining theoretical foundations with hands-on projects and real-world case studies',
+  //   //   gradient: 'from-purple-500 to-pink-500',
+  //   //   stats: { value: '100+', label: 'Students/Year' }
+  //   // },
+  //   // {
+  //   //   icon: Award,
+  //   //   title: 'Mentorship Excellence',
+  //   //   description: 'Dedicated guidance for student research, career development, and academic growth through personalized attention',
+  //   //   gradient: 'from-amber-500 to-orange-500',
+  //   //   stats: { value: '10+', label: 'Years' }
+  //   // }
+  // ]
 
-  const philosophyPoints = [
-    { icon: Target, text: 'Bridging theory with practical industry applications' },
-    { icon: Lightbulb, text: 'Fostering innovative thinking and problem-solving skills' },
-    { icon: Users, text: 'Collaborative learning through group projects and discussions' },
-    { icon: GraduationCap, text: 'Preparing students for research excellence and industry careers' },
-  ]
+  // const philosophyPoints = [
+  //   { icon: Target, text: 'Bridging theory with practical industry applications' },
+  //   { icon: Lightbulb, text: 'Fostering innovative thinking and problem-solving skills' },
+  //   { icon: Users, text: 'Collaborative learning through group projects and discussions' },
+  //   { icon: GraduationCap, text: 'Preparing students for research excellence and industry careers' },
+  // ]
 
   return (
     <section id="teaching" className="relative py-24 md:py-32 overflow-hidden" ref={ref}>
@@ -75,7 +75,7 @@ export default function TeachingSection() {
           </div>
 
           {/* Teaching info cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          {/* <div className="grid md:grid-cols-3 gap-6 mb-16">
             {teachingInfo.map((section, index) => {
               const Icon = section.icon
               return (
@@ -108,7 +108,7 @@ export default function TeachingSection() {
                 </div>
               )
             })}
-          </div>
+          </div> */}
 
           {/* Courses taught */}
           <div className={`mb-16 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -140,7 +140,7 @@ export default function TeachingSection() {
             </div>
           </div>
 
-          {/* Teaching philosophy */}
+          {/* Teaching philosophy
           <div className={`transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
@@ -176,7 +176,7 @@ export default function TeachingSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

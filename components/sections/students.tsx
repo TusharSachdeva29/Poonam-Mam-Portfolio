@@ -58,12 +58,12 @@ export default function StudentsSection() {
     }
   ]
 
-  const mentorshipHighlights = [
-    { icon: Trophy, value: '37+', label: 'Students Guided', description: 'Across all programs' },
-    { icon: Target, value: '15+', label: 'Publications', description: 'With students as co-authors' },
-    { icon: GraduationCap, value: '100%', label: 'Completion Rate', description: 'For supervised projects' },
-    { icon: ArrowUpRight, value: '90%+', label: 'Placement Rate', description: 'In top companies' },
-  ]
+  // const mentorshipHighlights = [
+  //   { icon: Trophy, value: '37+', label: 'Students Guided', description: 'Across all programs' },
+  //   { icon: Target, value: '15+', label: 'Publications', description: 'With students as co-authors' },
+  //   { icon: GraduationCap, value: '100%', label: 'Completion Rate', description: 'For supervised projects' },
+  //   { icon: ArrowUpRight, value: '90%+', label: 'Placement Rate', description: 'In top companies' },
+  // ]
 
   return (
     <section id="students" className="relative py-24 md:py-32 overflow-hidden" ref={ref}>
@@ -92,20 +92,20 @@ export default function StudentsSection() {
             </p>
           </div>
 
-          {/* Highlights bar */}
-          <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            {mentorshipHighlights.map((item, index) => {
-              const Icon = item.icon
-              return (
-                <div key={index} className="group p-5 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300 text-center hover-lift">
-                  <Icon className="w-7 h-7 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform" />
-                  <p className="text-3xl font-bold gradient-text mb-1">{item.value}</p>
-                  <p className="text-sm font-medium text-foreground">{item.label}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
-                </div>
-              )
-            })}
-          </div>
+            {/* Highlights bar
+            <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              {mentorshipHighlights.map((item, index) => {
+                const Icon = item.icon
+                return (
+                  <div key={index} className="group p-5 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300 text-center hover-lift">
+                    <Icon className="w-7 h-7 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform" />
+                    <p className="text-3xl font-bold gradient-text mb-1">{item.value}</p>
+                    <p className="text-sm font-medium text-foreground">{item.label}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
+                  </div>
+                )
+              })}
+            </div> */}
 
           {/* Student categories */}
           <div className="grid md:grid-cols-3 gap-6">
